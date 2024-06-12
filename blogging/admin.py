@@ -19,7 +19,8 @@ class PostAdmin(admin.ModelAdmin):
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    exclude = ('posts',)  # excluding post field
+    exclude = ("posts",)  # excluding post field
+
 
 # new admin registration for Category Model
 # admin.site.register(Category)
