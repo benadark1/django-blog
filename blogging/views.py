@@ -76,6 +76,7 @@ class CategoryViewSet(viewsets.ModelViewSet):
     serializer_class = CategorySerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
+
 # def list_view(request):
 #     published = Post.objects.exclude(published_date__exact=None)
 #     posts = published.order_by('-published_date')

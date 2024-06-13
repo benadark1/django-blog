@@ -22,9 +22,9 @@ from rest_framework import routers
 from blogging import views
 
 router = routers.DefaultRouter()
-router.register(r'users', views.UserViewSet)
-router.register(r'post', views.PostViewSet)
-router.register(r'category', views.CategoryViewSet)
+router.register(r"users", views.UserViewSet)
+router.register(r"post", views.PostViewSet)
+router.register(r"category", views.CategoryViewSet)
 
 urlpatterns = [
     path("polling/", include("polling.urls")),
